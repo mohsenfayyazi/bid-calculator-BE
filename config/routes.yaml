@@ -1,0 +1,9 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+calculate_bid:
+    path: /api/calculate-bid
+    controller: App\Controller\BidCalculationController::calculateBid
+    methods: POST

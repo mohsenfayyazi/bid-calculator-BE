@@ -1,0 +1,15 @@
+# config/packages/nelmio_cors.yaml
+nelmio_cors:
+    defaults:
+        allow_origin: ['http://127.0.0.1:8080']  # Frontend origin
+        allow_credentials: true
+        allow_headers: ['Content-Type', 'Authorization']
+        expose_headers: ['Content-Type', 'Authorization']
+        allow_methods: ['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE']
+        max_age: 3600
+    paths:
+        '^/api/':  # Apply CORS settings only to routes starting with /api
+            allow_origin: ['http://127.0.0.1:8080']
+            allow_methods: ['POST', 'GET', 'OPTIONS']
+            allow_headers: ['Content-Type', 'Authorization']
+            max_age: 3600

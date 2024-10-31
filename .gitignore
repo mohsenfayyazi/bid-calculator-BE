@@ -1,0 +1,22 @@
+# Ignore sensitive and environment-specific files
+.env
+.env.local
+.env.*.local
+.env.test.local
+phpunit.xml
+phpunit.xml.dist
+
+# Ignore Symfony cache and logs
+/var/
+/vendor/
+
+# Ignore IDE config files
+.idea/
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Composer lock files if you don't need them for specific dependency locking
+/composer.lock
